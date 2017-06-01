@@ -22,9 +22,22 @@ namespace ScrabbleScore
     public void Score_ScoresMultipleLetter_True()
     {
       //arrange
-      string input = "eat";
+      string input = "beaten";
       ScrabbleWord test = new ScrabbleWord(input);
-      int expectedOutput = 3;
+      int expectedOutput = 8;
+      //act
+      int output = test.Score();
+      //assert
+      Assert.Equal(expectedOutput, output);
+    }
+
+    [Fact]
+    public void Score_ScoresMultipleLetterWithCapitals_True()
+    {
+      //arrange
+      string input = "BeAtEn";
+      ScrabbleWord test = new ScrabbleWord(input);
+      int expectedOutput = 8;
       //act
       int output = test.Score();
       //assert
