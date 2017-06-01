@@ -15,7 +15,7 @@ namespace ScrabbleScore.Objects
 
     public ScrabbleWord(string word)
     {
-      _word = word;
+      _word = word.ToLower();
     }
 
     public int Score()
