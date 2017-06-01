@@ -1,3 +1,4 @@
+using Xunit;
 using ScrabbleScore.Objects;
 
 namespace ScrabbleScore

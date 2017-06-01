@@ -5,7 +5,7 @@ namespace ScrabbleScore.Objects
   public class ScrabbleWord
   {
     private string _word;
-    private Dictionary<string, int> _scores = {{"a", 1}, {"e", 1}, {"i", 1}, {"o", 1}, {"u", 1}, {"l", 1}, {"n", 1}, {"r", 1}, {"s", 1}, {"t", 1},
+    private Dictionary<string, int> _scores = new Dictionary<string, int> {{"a", 1}, {"e", 1}, {"i", 1}, {"o", 1}, {"u", 1}, {"l", 1}, {"n", 1}, {"r", 1}, {"s", 1}, {"t", 1},
                                                {"d", 2}, {"g", 2},
                                                {"b", 3}, {"c", 3}, {"m", 3}, {"p", 3},
                                                {"f", 4}, {"h", 4}, {"v", 4}, {"w", 4}, {"y", 4},
@@ -18,7 +18,10 @@ namespace ScrabbleScore.Objects
       _word = word;
     }
 
-
+    public int Score()
+    {
+      return 5;
+    }
 
     public string GetWord()
     {
