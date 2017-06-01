@@ -1,0 +1,11 @@
+<form action="/" method="post">
+  <label for="word">Enter a word:</label>
+  <input type="text" name="word">
+  <button type="submit" name="button">Scrabble It!</button>
+</form>
+
+@if(Model != null)
+{
+  @Model.GetWord();
+  @Model.Score();
+}
