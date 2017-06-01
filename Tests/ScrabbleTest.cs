@@ -17,5 +17,18 @@ namespace ScrabbleScore
       //assert
       Assert.Equal(expectedOutput, output);
     }
+
+    [Fact]
+    public void Score_ScoresMultipleLetter_True()
+    {
+      //arrange
+      string input = "eat";
+      ScrabbleWord test = new ScrabbleWord(input);
+      int expectedOutput = 3;
+      //act
+      int output = test.Score();
+      //assert
+      Assert.Equal(expectedOutput, output);
+    }
   }
 }

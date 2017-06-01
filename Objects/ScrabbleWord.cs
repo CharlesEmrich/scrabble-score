@@ -20,7 +20,7 @@ namespace ScrabbleScore.Objects
 
     public int Score()
     {
-      return 5;
+      return _scores[_word];
     }
 
     public string GetWord()
